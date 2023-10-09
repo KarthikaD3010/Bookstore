@@ -12,6 +12,6 @@ namespace BookstoreApi.Repository
         Task<List<BookViewmodel>> GetBooksByPublisherAuthorTitle();
         Task<List<BookViewmodel>> GetBooksByAuthorTitle();
         Task<decimal> GetTotalPrice();
-        Task<string> AddBooks(List<BookDetails> ListBooks);
+        Task<string> AddBooks(List<PostBookViewModel> ListBooks);
     }
 }

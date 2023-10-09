@@ -68,11 +68,11 @@ namespace BookstoreApi.Controllers
         }
         [HttpPost]
         [Route("AddBooks")]
-        public async Task<IActionResult> AddBooks([FromBody] List<BookDetails> BookList)
+        public async Task<IActionResult> AddBooks([FromBody] List<PostBookViewModel> Listbook)
         {
             try
             {
-                return Ok(await bookRepository.AddBooks(BookList));
+                return Ok(await bookRepository.AddBooks(Listbook));
             }
             catch (Exception)
             {

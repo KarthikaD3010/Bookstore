@@ -14,3 +14,15 @@
 
         https://localhost:44337/api/book/AddBooks
         This api will let us add a book or list of books in database.
+
+   Find the Postman collection for reference:
+   Postmancollection/Bookstore.postman_collection.json in 
+
+   Find the Script for Database tables and data
+
+   
+
+
+
+
+

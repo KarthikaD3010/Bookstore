@@ -87,15 +87,33 @@ namespace BookstoreApi.Repository
                 throw ex;
             }
         }
-        public async Task<string> AddBooks(List<BookDetails> ListBooks)
+        public async Task<string> AddBooks(List<PostBookViewModel> ListPostBookViewModel)
         {
             try
             {
                 string Result = string.Empty;
                 Result = "Failed to Add Books";
 
-                if (ListBooks!=null && ListBooks.Count > 0)
+                List<BookDetails> ListBooks = new List<BookDetails>();
+                if (ListPostBookViewModel != null && ListPostBookViewModel.Count > 0)
                 {
+                    foreach (var book in ListPostBookViewModel)
+                    {
+                        if (book != null)
+                        {
+                            BookDetails newbook = new BookDetails();
+                            newbook.AuthorFirstName = book.AuthorFirstName;
+                            newbook.AuthorLastName = book.AuthorLastName;
+                            newbook.TitleOfSource = book.TitleOfContainer;
+                            newbook.Publisher = book.Publisher;
+                            newbook.PublicationDate = book.PublicationDate;
+                            newbook.Price = book.Price;
+                            newbook.PageRange = book.PageRange;
+                            newbook.Url = book.Url;
+                            newbook.VolumeNo = book.VolumeNo;
+                            ListBooks.Add(newbook);
+                        }
+                    }
                     await bookstoreContext.BookDetails.AddRangeAsync(ListBooks);
                     var Issaved = await bookstoreContext.SaveChangesAsync();
                     if (Issaved > 0)
