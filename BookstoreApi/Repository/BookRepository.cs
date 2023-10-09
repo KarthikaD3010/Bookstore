@@ -47,13 +47,28 @@ namespace BookstoreApi.Repository
             }
         }
 
-        public async Task<List<BookDetails>> GetBooksByAuthorTitle()
+        public async Task<List<BookViewmodel>> GetBooksByAuthorTitle()
         {
-            List<BookDetails> Booklist = new List<BookDetails>();
-            try
+            List<BookViewmodel> listViewmodel = new List<BookViewmodel>();
+            List<BookDetails> Booklist = new List<BookDetails>(); try
             {
                 Booklist = await bookstoreContext.BookDetails.FromSqlRaw($"GetListByAuthorthentitle").ToListAsync();
-                return Booklist;
+                if (Booklist != null && Booklist.Count > 0)
+                {
+                    //iterate booklist to get each book details and generate seperate citations
+                    foreach (BookDetails book in Booklist)
+                    {
+                        if (book != null)
+                        {
+                            BookViewmodel bookviewmodel = new BookViewmodel();
+                            BookDetails bookdetails = book;
+                            bookviewmodel.MLACitation = GenerateMLACitation(book);
+                            bookviewmodel.ChicagoCitation = GenerateChicagoCitation(book);
+                            listViewmodel.Add(bookviewmodel);
+                        }
+                    }
+                }
+                return listViewmodel;
             }
             catch (Exception ex)
             {

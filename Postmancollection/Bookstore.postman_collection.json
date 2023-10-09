@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "10cf4361-0ef7-464a-b613-4bb018b3151c",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44337/api/book/getbooksbypublisher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44337/api/book/getbooksbypublisher",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44337",
+					"path": [
+						"api",
+						"book",
+						"getbooksbypublisher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44337/api/book/getbooksbyauthor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44337/api/book/getbooksbyauthor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44337",
+					"path": [
+						"api",
+						"book",
+						"getbooksbyauthor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44337/api/book/gettotalprice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44337/api/book/gettotalprice",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44337",
+					"path": [
+						"api",
+						"book",
+						"gettotalprice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44337/api/book/AddBooks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n        {\r\n    \"TitleOfSource\":\"Data Structure Using C\",\r\n    \"TitleOfContainer\":\"c programming\",\r\n    \"AuthorLastname\":\"Singhal\",\r\n    \"AuthorFirstname\":\"Saurabh\",\r\n    \"Publisher\":\"Thakur Publications Lucknow\",\r\n    \"PublicationDate\":\"2019-01-10\",\r\n    \"VolumeNo\":\"P10\",\r\n    \"PageRange\":\"200-207\",\r\n    \"Url\":\"http://computerwebsite.com\",\r\n    \"Price\":202.13\r\n        },\r\n        {\r\n    \"TitleOfSource\":\"CBOT\",\r\n    \"TitleOfContainer\":\"c programming\",\r\n    \"AuthorLastname\":\"Verma\",\r\n    \"AuthorFirstname\":\"Gunjan\",\r\n    \"Publisher\":\"Thakur Publications\",\r\n    \"PublicationDate\":\"2019-03-20\",\r\n    \"VolumeNo\":\"\",\r\n    \"PageRange\":\"200-207\",\r\n    \"Url\":\"\",\r\n    \"Price\":300.50\r\n        }\r\n    \r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44337/api/book/AddBooks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44337",
+					"path": [
+						"api",
+						"book",
+						"AddBooks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
