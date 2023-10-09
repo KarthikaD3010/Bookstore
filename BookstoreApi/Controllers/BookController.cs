@@ -27,8 +27,9 @@ namespace BookstoreApi.Controllers
             try
             {
                 var Booklist = await bookRepository.GetBooksByPublisherAuthorTitle();
+                return new JsonResult(new { Booklist });
 
-                return Ok(Booklist);
+
             }
             catch (Exception)
             {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Tasks\\BookstoreApi\\BookstoreApi\\BookstoreApi.csproj": {}
+    "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Gitup\\Bookstore\\BookstoreApi\\BookstoreApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Tasks\\BookstoreApi\\BookstoreApi\\BookstoreApi.csproj": {
+    "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Gitup\\Bookstore\\BookstoreApi\\BookstoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Tasks\\BookstoreApi\\BookstoreApi\\BookstoreApi.csproj",
+        "projectUniqueName": "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Gitup\\Bookstore\\BookstoreApi\\BookstoreApi.csproj",
         "projectName": "BookstoreApi",
-        "projectPath": "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Tasks\\BookstoreApi\\BookstoreApi\\BookstoreApi.csproj",
+        "projectPath": "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Gitup\\Bookstore\\BookstoreApi\\BookstoreApi.csproj",
         "packagesPath": "C:\\Users\\GanEsh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Tasks\\BookstoreApi\\BookstoreApi\\obj\\",
+        "outputPath": "C:\\Users\\GanEsh\\Desktop\\Official\\Learning\\Gitup\\Bookstore\\BookstoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GanEsh\\AppData\\Roaming\\NuGet\\NuGet.Config",

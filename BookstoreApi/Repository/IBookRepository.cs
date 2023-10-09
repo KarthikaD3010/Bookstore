@@ -9,7 +9,7 @@ namespace BookstoreApi.Repository
 {
     public interface IBookRepository
     {
-        Task<List<BookDetails>> GetBooksByPublisherAuthorTitle();
+        Task<List<BookViewmodel>> GetBooksByPublisherAuthorTitle();
         Task<List<BookDetails>> GetBooksByAuthorTitle();
         Task<decimal> GetTotalPrice();
         Task<string> AddBooks(List<BookDetails> ListBooks);
