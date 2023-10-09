@@ -16,11 +16,23 @@
         This api will let us add a book or list of books in database.
 
    Find the Postman collection for reference:
-   Postmancollection/Bookstore.postman_collection.json in 
+   Postmancollection/Bookstore.postman_collection.json  
 
    Find the Script for Database tables and data
+   script/script.sql 
 
-   
+
+## install
+
+    Download or clone the project.
+    Open project in Visual studio.
+    I used Visualstudio 2019, .net core3.1.
+    Run database script in MsSql server
+    start the program and then test the apis using give api links.
+    
+
+
+
 
 
 
